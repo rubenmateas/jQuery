@@ -1,12 +1,11 @@
-//When the image is clicked on it will fade out, the fade will last 1 second
+//When the image is clicked on it will fade out 50% and move left
 
 $(function(){
 'use strict';
 
   $('#btn').click(function(){
-    $('img').css('left', '0px')
-            .animate({left: -100}, 2000, 'linear')
-            .animate( { 'opacity' : .5 }, 250 );
+    $('img').animate({'margin-left': 500})
+            .animate( { 'opacity' : .5 }, 250, 'linear' );
   });
 
 });
