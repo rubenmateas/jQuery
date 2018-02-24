@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8' />
+	<title>Form Feedback Challenge</title>
+	<link rel='stylesheet' href='style.css' type='text/css'>
+</head>
+<body>
+
+<div id='page'>
+
+<h1>Form Feedback Challenge</h1>
+
+<form id='my-form'>
+	<div class='group'>
+	<label>Your name:</label>
+	<input id='name' type='text' name='name' value='' placeholder='Your name'>
+	<p id='bad'></p>
+	</div>
+
+	<div class='group'>
+	<label>Your phone number (required):</label>
+	<input id='phone' type='text' name='phone' value='' placeholder='(xxx) xxx-xxxx'>
+	</div>
+
+	<div class='group'>
+	<label>Your favorite color:</label>
+	<input id='color' type='text' name='color' value='' placeholder='Personal choice, really!'>
+	<p id='good'></p>
+	</div>
+</form>
+
+<script src='https://code.jquery.com/jquery-3.0.0.min.js'></script>
+<script src='app.js'></script>
+</body>
+</html>
